@@ -14,7 +14,6 @@
 /*
 General
  */
-
 * {
     font-family: Moon;
     -webkit-touch-callout: none;
@@ -36,9 +35,14 @@ html, body {
     width: 100%;
     margin: 0;
     padding: 0;
+    text-align: center;
     background: linear-gradient(180deg, white, lightgrey);
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+.TopMargin {
+    margin: 20px 0 0 0;
 }
 
 /*
@@ -46,6 +50,32 @@ Main
  */
 .Main {
     display: none;
+}
+
+/*
+Titles
+ */
+.TitleWrapper {
+    position: relative;
+    margin: 0;
+    padding: 0 20px 0 20px;
+}
+
+.TitleWrapper h1 {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.TitleWrapper .SubTitle {
+    color: #FE407F;
+}
+
+.TitleWrapper .SubTitle:before {
+    content: "(";
+}
+
+.TitleWrapper .SubTitle:after {
+    content: ")";
 }
 
 /*
@@ -58,7 +88,6 @@ Header
 }
 
 .Header {
-    text-align: center;
     margin-top: -2.5rem;
 }
 
@@ -67,13 +96,13 @@ Header
     height: 100px;
 }
 
-.Header h1 {
-    text-transform: capitalize;
-}
-
 /*
-ABOUT TEXT
+About-text
  */
+.AboutText ul {
+    margin: 0;
+    padding: 0 20px 20px 30px;
+}
 
 .AboutText ul li {
     position: relative;
@@ -94,11 +123,18 @@ Social Media FABs
  */
 .SocialMedia {
     display: flex;
+    margin: 0 auto;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     align-content: center;
+}
+
+@media (min-width: 600px) {
+    /* on desktop only ~half size */
+    .SocialMedia {
+        width: 50%
+    }
 }
 
 .SocialMedia .SocialFab {
@@ -113,18 +149,186 @@ Social Media FABs
     border-radius: 100%;
 }
 
+@media (max-width: 700px) {
+    .SocialMedia .SocialFab {
+        height: 30px;
+        width: 30px;
+    }
+}
+
 .SocialFab.Twitter {
-    background-color: #2674f8;
+    background-color: #5E96F7;
 }
 
 .SocialFab.Instagram {
-    background-color: #c623ff;
+    background-color: #DF41FA;
 }
 
 .SocialFab.YouTube {
-    background-color: #ff0005;
+    background-color: #FF1645;
 }
 
 .SocialFab.GooglePlus {
-    background-color: #ff546d;
+    background-color: #ED5250;
 }
+
+/*
+Work image grid
+ */
+.ImageGrid {
+    margin: 20px 20px 0 20px;
+    line-height: 0;
+    -webkit-column-count: 4;
+    -webkit-column-gap: 10px;
+    -moz-column-count: 4;
+    -moz-column-gap: 10px;
+    column-count: 4;
+    column-gap: 10px;
+}
+
+.ImageGrid img {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 10px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+@media (max-width: 1000px) {
+    .ImageGrid {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media (max-width: 800px) {
+    .ImageGrid {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+/*
+Contact me
+ */
+.ContactMe {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+@media (min-width: 600px) {
+    .ContactMe {
+        width: 50%
+    }
+}
+
+.ContactMe .ContactFab {
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    height: 50px;
+    width: 50px;
+    padding: 0.5em 0.5em;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+
+@media (max-width: 700px) {
+    .ContactMe .ContactFab {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+.ContactFab.Hangouts {
+    background-color: #3CC173;
+}
+
+.ContactFab.PaperPlane {
+    background-color: #516BF7;
+}
+
+.ContactFab.gMail {
+    background-color: #E13335;
+}
+
+/*
+Super cool life motto
+ */
+.SuperCoolLifeMotto {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    font-size: larger;
+    margin: 50px 15px 20px 0;
+}
+
+.QuoteColumn {
+    height: 100%;
+    width: 15%;
+}
+
+.TextColumn {
+    height: 100%;
+    width: 50%;
+}
+
+.QuoteAuthor {
+    display: inline-block;
+    color: #FE407F;
+}
+
+.QuoteAuthor:before {
+    content: "- ";
+}
+
+/*
+Scroll up
+ */
+.ScrollUp .ScrollFab {
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(#3F80FD, #3A59E4);
+    height: 50px;
+    width: 50px;
+    padding: 0.5em 0.5em;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+
+@media (max-width: 700px) {
+    .ScrollUp .ScrollFab {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+/*
+Credits
+ */
+.Credits {
+    margin: 20px 0 20px 0;
+    color: #4d4d4d;
+}
+
+.Credits a {
+    color: #4d4d4d;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.Credits i {
+    color: red !important;
+}
+
