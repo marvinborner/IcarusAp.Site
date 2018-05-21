@@ -35,11 +35,10 @@
     </div>
 
     <div class="SocialMedia">
-        <span class="SocialFab"></span>
-        <span class="SocialFab"></span>
-        <span class="SocialFab"></span>
-        <span class="SocialFab"></span>
-        <span class="SocialFab"></span>
+        <i class="SocialFab Twitter fab fa-twitter"></i>
+        <i class="SocialFab Instagram fab fa-instagram"></i>
+        <i class="SocialFab YouTube fab fa-youtube"></i>
+        <i class="SocialFab GooglePlus fab fa-google-plus-g"></i>
     </div>
 </div>
 

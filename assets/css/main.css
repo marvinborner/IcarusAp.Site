@@ -102,10 +102,28 @@ Social Media FABs
 }
 
 .SocialMedia .SocialFab {
-    background-color: lightblue; /* temporary */
+    display: inline-block;
+    color: white;
     height: 50px;
     width: 50px;
+    padding: 0.5em 0.5em;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
+}
+
+.SocialFab.Twitter {
+    background-color: #63a1f8;
+}
+
+.SocialFab.Instagram {
+    background-color: #c74fff;
+}
+
+.SocialFab.YouTube {
+    background-color: #ff4853;
+}
+
+.SocialFab.GooglePlus {
+    background-color: #ff6c7b;
 }
