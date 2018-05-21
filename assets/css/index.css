@@ -5,22 +5,40 @@
 ******************************
 *****************************/
 
-* {
-    font-family: Moon;
-    margin: 0;
-    padding: 0;
-}
-
 @font-face {
     font-family: Moon;
     src: url("../fonts/Moon2.0-Bold.woff") format("woff"), url("../fonts/Moon2.0-Bold.ttf") format("truetype");
 }
 
+* {
+    font-family: Moon;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-overflow-scrolling: touch;
+
+    outline: none;
+    ie-dummy: expression(this.hideFocus=true);
+}
+
+html, body {
+    min-height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, white, lightgrey);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 .top {
     background-image: url("../images/bg.jpg");
     height: 300px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 .title {
@@ -43,8 +61,4 @@
 
 .about ul li:last-child:after {
     display: none;
-}
-
-body {
-    background: linear-gradient(180deg, white, lightgrey);
 }
