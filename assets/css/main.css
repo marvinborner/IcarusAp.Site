@@ -2,6 +2,7 @@
 ******************************
 **  DESIGNED BY AAKASH NP   **
 ** CREATED BY MARCO FISCHER **
+**     AND MARVIN BORNER    **
 ******************************
 *****************************/
 
@@ -9,6 +10,10 @@
     font-family: Moon;
     src: url("../fonts/Moon2.0-Bold.woff") format("woff"), url("../fonts/Moon2.0-Bold.ttf") format("truetype");
 }
+
+/*
+General
+ */
 
 * {
     font-family: Moon;
@@ -36,29 +41,53 @@ html, body {
     background-attachment: fixed;
 }
 
-.top {
-    background-image: url("../images/bg.jpg");
-    height: 300px;
+/*
+Main
+ */
+.Main {
+    display: none;
 }
 
-.title {
+/*
+Header
+ */
+.TopImage {
+    object-fit: cover;
+    height: 30%;
+    width: 100%;
+}
+
+.Header {
     text-align: center;
     margin-top: -2.5rem;
 }
 
-.about {
+.Header h1 {
+    text-transform: capitalize;
+}
+
+/*
+ABOUT TEXT
+ */
+.AboutText {
     text-align: center;
 }
 
-.about ul li {
+.AboutText ul {
+    position: relative;
+    text-align: center;
+}
+
+.AboutText ul li {
+    position: relative;
     display: inline;
     list-style-type: none;
 }
 
-.about ul li:after {
+.AboutText ul li:after {
     content: " | ";
 }
 
-.about ul li:last-child:after {
+.AboutText ul li:last-child:after {
     display: none;
 }
