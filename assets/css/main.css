@@ -53,13 +53,18 @@ Header
  */
 .TopImage {
     object-fit: cover;
-    height: 30%;
+    height: 30vh;
     width: 100%;
 }
 
 .Header {
     text-align: center;
     margin-top: -2.5rem;
+}
+
+.Header img {
+    width: 100px;
+    height: 100px;
 }
 
 .Header h1 {
@@ -69,14 +74,6 @@ Header
 /*
 ABOUT TEXT
  */
-.AboutText {
-    text-align: center;
-}
-
-.AboutText ul {
-    position: relative;
-    text-align: center;
-}
 
 .AboutText ul li {
     position: relative;

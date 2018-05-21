@@ -18,7 +18,7 @@
 <div class="Main">
     <img class="TopImage" src="assets/images/bg.jpg" />
     <div class="Header">
-        <img src="./assets/images/OwnAvatar_02.png" width="100px" height="100px" alt="Aakash NP" />
+        <img src="./assets/images/OwnAvatar_02.png" alt="Aakash NP" />
         <h1>Aakash NP</h1>
     </div>
 
