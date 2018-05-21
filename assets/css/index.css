@@ -1,0 +1,38 @@
+/*****************************
+******************************
+**  DESIGNED BY AAKASH NP   **
+** CREATED BY MARCO FISCHER **
+******************************
+*****************************/
+
+* {
+	font-family: Moon;
+	margin: 0;
+	padding: 0;
+}
+
+
+@font-face {
+    font-family: Moon;
+    src: url("../fonts/Moon2.0-Bold.woff") format("woff"), url("../fonts/Moon2.0-Bold.ttf") format("truetype");
+}
+
+.top {
+	background-image: url("../images/bg.jpg");
+	height: 300px;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.title {
+	text-align: center;
+	margin-top: -2.5rem;
+}
+
+.about {
+	text-align: center;
+}
+
+body {
+	background: linear-gradient(180deg, white, lightgrey);   
+}
