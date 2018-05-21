@@ -103,6 +103,7 @@ Social Media FABs
 
 .SocialMedia .SocialFab {
     display: inline-block;
+    cursor: pointer;
     color: white;
     height: 50px;
     width: 50px;
@@ -113,17 +114,17 @@ Social Media FABs
 }
 
 .SocialFab.Twitter {
-    background-color: #63a1f8;
+    background-color: #2674f8;
 }
 
 .SocialFab.Instagram {
-    background-color: #c74fff;
+    background-color: #c623ff;
 }
 
 .SocialFab.YouTube {
-    background-color: #ff4853;
+    background-color: #ff0005;
 }
 
 .SocialFab.GooglePlus {
-    background-color: #ff6c7b;
+    background-color: #ff546d;
 }

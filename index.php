@@ -35,10 +35,10 @@
     </div>
 
     <div class="SocialMedia">
-        <i class="SocialFab Twitter fab fa-twitter"></i>
-        <i class="SocialFab Instagram fab fa-instagram"></i>
-        <i class="SocialFab YouTube fab fa-youtube"></i>
-        <i class="SocialFab GooglePlus fab fa-google-plus-g"></i>
+        <i class="SocialFab Twitter fab fa-twitter" onclick="GoToSite('Twitter')"></i>
+        <i class="SocialFab Instagram fab fa-instagram" onclick="GoToSite('Instagram')"></i>
+        <i class="SocialFab YouTube fab fa-youtube" onclick="GoToSite('YouTube')"></i>
+        <i class="SocialFab GooglePlus fab fa-google-plus-g" onclick="GoToSite('SocialFab')"></i>
     </div>
 </div>
 
