@@ -13,13 +13,11 @@
 </head>
 <body>
 
-<i class="LoadingAnimation fas fa-circle-notch fa-spin" style="font-size:40px"></i>
-
 <div class="Main">
     <img class="TopImage" src="assets/images/bg.jpg" />
     <div class="Header">
+        <h2 class="TopMargin">Aakash NP</h2>
         <img src="./assets/images/OwnAvatar_02.png" alt="Aakash NP" />
-        <div class="TitleWrapper"><h1>Aakash NP</h1></div>
     </div>
 
     <div class="AboutText">
@@ -70,9 +68,9 @@
     <div class="ContactMe">
         <a href="javascript:void(0)" target="_blank"><i class="ContactFab Hangouts fas fa-quote-right"
                                                         data-fa-transform="shrink-8"></i></a>
-        <a href="javascript:void(0)" target="_blank"><i class="ContactFab PaperPlane fas fa-paper-plane"
+        <a href="https://t.me/IcarusAP" target="_blank"><i class="ContactFab Telegram fab fa-telegram-plane"
                                                         data-fa-transform="shrink-8"></i></a>
-        <a href="javascript:void(0)" target="_blank"><i class="ContactFab gMail fas fa-envelope"
+        <a href="mailto:aakash19.98pawar@gmail.com" target="_blank"><i class="ContactFab gMail fas fa-envelope"
                                                         data-fa-transform="shrink-8"></i></a>
     </div>
 
