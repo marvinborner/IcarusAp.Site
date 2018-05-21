@@ -33,6 +33,14 @@
             <li>Founder of AndroUnity</li>
         </ul>
     </div>
+
+    <div class="SocialMedia">
+        <span class="SocialFab"></span>
+        <span class="SocialFab"></span>
+        <span class="SocialFab"></span>
+        <span class="SocialFab"></span>
+        <span class="SocialFab"></span>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
