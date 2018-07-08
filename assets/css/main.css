@@ -6,19 +6,22 @@
 ******************************
 *****************************/
 
-
 @font-face {
-    font-family: 'LaoUI'; /* for normal text */
+    font-family: 'LaoUI';
+    /* for normal text */
     src: url("../fonts/LaoUI.ttf") format('truetype');
 }
+
 @font-face {
-    font-family: 'LaoUIb'; /* for header */
+    font-family: 'LaoUIb';
+    /* for header */
     src: url("../fonts/LaoUIb.ttf") format('truetype');
 }
 
 /*
 General
  */
+
 * {
     font-family: 'LaoUI';
     -webkit-touch-callout: none;
@@ -30,12 +33,12 @@ General
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-overflow-scrolling: touch;
-
     outline: none;
-    ie-dummy: expression(this.hideFocus=true);
 }
 
-html, body {
+html,
+body {
+    position: relative;
     min-height: 100vh;
     width: 100%;
     margin: 0;
@@ -50,6 +53,7 @@ html, body {
 /*
 Titles
  */
+
 .SubTitle {
     text-transform: capitalize;
     font-size: smaller;
@@ -60,6 +64,7 @@ Titles
 /*
 Header
  */
+
 .TopLeftLogo {
     position: absolute;
     margin: 5px 0 0 5px;
@@ -90,8 +95,8 @@ Header
     top: calc(11vh + 100px);
     left: 0;
     right: 0;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    height: 1.3em;
     width: 10ch;
     padding: 5px;
     text-transform: uppercase;
@@ -118,8 +123,14 @@ Header
 /*
 About-text
  */
+
 .AboutOverview {
-    clear: both;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: calc(11vh + 100px + 2.5em);
 }
 
 .AboutOverview ul {
@@ -146,6 +157,7 @@ About-text
 /*
 About section
  */
+
 .AboutSection {
     width: 100%;
 }
@@ -163,6 +175,7 @@ hr.AboutDivider {
 /*
 Work image grid
  */
+
 .MyWork {
     margin: 0 auto;
     width: 50vw;
@@ -217,9 +230,12 @@ Work image grid
 /*
 Credits
  */
+
 .Credits {
+    bottom: 0;
     margin-top: 20px;
-    padding: 20px;
+    padding: 20px 0 20px 0;
+    width: 100%;
     background-color: darkgrey;
     color: #4d4d4d;
 }
@@ -233,4 +249,3 @@ Credits
 .Credits .Heart {
     color: #ff5663 !important;
 }
-
